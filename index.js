@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const getWeather = async (param) => {
-        const url = `http://api.weatherapi.com/v1/current.json?key=45d1e3c2830547be96601023242705&q=${param}&aqi=no`;
+        const url = `https://api.weatherapi.com/v1/current.json?key=45d1e3c2830547be96601023242705&q=${param}&aqi=no`;
         try {
             const response = await fetch(url, { mode: 'cors' });
             const data = await response.json();
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const unitSelector = document.querySelector('#temp');
     const systemSelector = document.querySelector('#system');
-    
+
 
     const success = (data) => {
         const lat = data.coords.latitude;
