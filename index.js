@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const unitSelector = document.querySelector('#temp');
     const systemSelector = document.querySelector('#system');
-
+    
 
     const success = (data) => {
         const lat = data.coords.latitude;
